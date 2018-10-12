@@ -1,0 +1,23 @@
+<svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu" transform="translate(-26.000000, -418.000000)">
+            <g id="Side-Menu">
+                <g id="Actions" transform="translate(26.000000, 314.000000)">
+                    <g id="Pitch" transform="translate(0.000000, 104.000000)">
+                        <g id="icons/side-menu/pitch">
+                            <g id="Group-6_export">
+                                <g id="Group-6" transform="translate(0.500000, 0.500000)">
+                                    <path d="M8.91498852,3.6287085 L3.6287085,8.75697254 L3.6287085,18.9987085 L18.9987085,18.9987085 L18.9987085,3.6287085 L8.91498852,3.6287085 Z" id="Rectangle-20" stroke="#000000" stroke-width="0.63" transform="translate(11.313708, 11.313708) rotate(-135.000000) translate(-11.313708, -11.313708) "></path>
+                                    <circle id="Oval-6" fill="#3A3A3A" cx="11.5" cy="11.5" r="2.5"></circle>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,152 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <img src="assets/icons/menu.svg">
+      </button>
+    </ion-buttons>
+    <ion-title>Dashboard</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <p text-center class="time-remaining"><span class="days">05</span> d : <span class="hours">10</span> h : <span class="minutes">36</span> m : <span class="seconds">05</span> s</p>
+  <div padding-horizontal>
+    <p>CONVERTION RATIO</p>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="card">
+            <div class="donut-chart chart1">
+              <div class="slice one"></div>
+              <div class="slice two"></div>
+              <div class="chart-center">
+                <span></span>
+                <p>Conversion</p>
+              </div>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-3>
+                <ion-icon class="palegreen" ios="ios-radio-button-on" md="md-radio-button-on"></ion-icon>
+              </ion-col>
+              <ion-col col-3>183</ion-col>
+              <ion-col col-6>Opt Ins</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-3>
+                <ion-icon class="red" ios="ios-radio-button-on" md="md-radio-button-on"></ion-icon>
+              </ion-col>
+              <ion-col col-3>13</ion-col>
+              <ion-col col-6>Opt outs</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col><hr></ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-3>196</ion-col>
+              <ion-col col-9 class="impressions">Total Impressions</ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <hr>
+    <p>CHANGES TODAY</p>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-1 text-right>
+          <ion-icon class="arrow-up" ios="ios-arrow-up" md="md-arrow-up"></ion-icon>
+        </ion-col>
+        <ion-col col-1 text-center>
+          7
+        </ion-col>
+        <ion-col col-4>
+          Opt Ins
+        </ion-col>
+        <ion-col col-1 text-right>
+          <ion-icon class="arrow-down" ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+        </ion-col>
+        <ion-col col-1 text-center>
+          1
+        </ion-col>
+        <ion-col col-4>
+          Opt Outs
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-list>
+      <button ion-item (click)="leaderboard()">
+        LEADERBOARD
+      </button>
+      <ion-item>
+        <ion-label stacked>STARTUP NAME</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>MISSION</ion-label>
+        <ion-input type="text" [(ngModel)]="mission"></ion-input>
+      </ion-item>
+      <ion-item no-lines class="count-down">
+        <ion-label text-right no-margin><small innerHTML="{{mission | countdown : 20}}"></small></ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>COMPETITIVE ADVANTAGE</ion-label>
+        <ion-select [(ngModel)]="advantage" multiple="true" cancelText="Cancel" okText="Ok!">
+          <ion-option value="cost_leadership">Cost Leadership</ion-option>
+          <ion-option value="differentiation">Differentiation</ion-option>
+          <ion-option value="focus">Focus</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>STAGE OF DEVELOPMENT</ion-label>
+        <ion-select [(ngModel)]="stage" multiple="true" cancelText="Cancel" okText="Ok!">
+          <ion-option value="profit_positive">Profit Positive</ion-option>
+          <ion-option value="revenue_positive">Revenue Positive</ion-option>
+          <ion-option value="beta_release">Beta Release</ion-option>
+          <ion-option value="prototype">Prototype</ion-option>
+          <ion-option value="specifications">Specifications</ion-option>
+          <ion-option value="design">Design</ion-option>
+          <ion-option value="concept">Concept</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>PATENTS</ion-label>
+        <ion-select [(ngModel)]="stage" multiple="true" cancelText="Cancel" okText="Ok!">
+          <ion-option value="profit_positive">Patented</ion-option>
+          <ion-option value="revenue_positive">Provisional</ion-option>
+          <ion-option value="beta_release">None</ion-option>
+          <ion-option value="prototype">Prototype</ion-option>
+          <ion-option value="specifications">Specifications</ion-option>
+          <ion-option value="design">Design</ion-option>
+          <ion-option value="concept">Concept</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div class="padding">
+    <button ion-button full color="dark">Save</button>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid no-padding>
+      <ion-row>
+        <ion-col text-center tappable (click)="showVotePage()">
+          <p text-center><img src="assets/icons/vote.svg"></p>
+          Vote
+        </ion-col>
+        <ion-col text-center tappable (click)="showRewardsPage()">
+          <p text-center><img src="assets/icons/rewards.svg"></p>
+          Rewards
+        </ion-col>
+        <ion-col text-center tappable (click)="showCampaignsPage()">
+          <p text-center><img src="assets/icons/campaign.svg"></p>
+          Campaigns
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

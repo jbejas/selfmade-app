@@ -1,0 +1,122 @@
+page-campaign {
+
+    .toolbar-background {
+        background: transparent !important;
+        border: none !important;
+    }
+
+    .header-md::after {
+        background-image: none !important;
+    }
+
+    .scroll-content {
+        margin-top: 0 !important;
+    }
+
+    .ceo-meta {
+        line-height: 30px;
+    }
+
+    .user-meta-box {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: -16%;
+        margin-bottom: 30px;
+        background: #FFF;
+        position: relative;
+        z-index: 100;
+        h1 {
+            margin:15px 0 5px 0;
+        }
+        h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.2rem;
+            font-weight: 200;
+        }
+        .username {
+            font-weight:200;
+            font-size: 1.4rem;
+        }
+        .investment {
+            font-weight:200;
+            font-size: 1.4rem;
+            span {
+                font-weight: 400;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .time-remaining {
+        font-size: 2rem;
+        opacity: 0.5;
+        background-color: rgba(0,0,0,0.05);
+        margin: 0 0 1rem 0;
+        padding: 1rem 0;
+    }
+    .days {
+        color: #7FB69E;
+    }
+    .hours {
+        color: #DDC788;
+    }
+    .minutes {
+        color: #E8B992;
+    }
+    .seconds {
+        color: #D89898;
+    }
+    .percentage-holder {
+        width: 100%;
+        height: 3px;
+        background: #D8D8D8;
+    }
+    .percentage {
+        width: 71%;
+        height: 3px;
+        background: #FF0000;
+    }
+    .campaign-meta {
+        ion-col {
+            color: #000;
+            font-size: 2rem;
+            span {
+                color: rgba(0,0,0,0.5);
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .content {
+        width: 95%;
+        margin-left: 2.5%;
+        h2 {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            font-weight: 200;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 20px;
+            font-weight: 200;
+        }
+    }
+
+    ion-slide {
+        padding:5px;
+        h2 {
+            margin: 0;
+            font-size: 1.4rem !important;
+            text-align: left !important;
+        }
+        p {
+            font-size: 1rem !important;
+            text-align: left !important;
+            margin: 0 0 10px 0 !important;
+        }
+    }
+
+    .swiper-pagination {
+        bottom: 0 !important;
+    }
+
+}

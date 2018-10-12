@@ -1,0 +1,71 @@
+page-filters {
+    .toolbar-background,
+    .scroll-content {
+        background: #1E1E1E !important;
+    }
+    .toolbar-title {
+        color: #FFF;
+    }
+    p {
+        color: #FFF;
+        font-size: 1.2rem;
+    }
+    .back-button-icon {
+        color: #FFF;
+    }
+    .item {
+        background-color: transparent;
+        padding-left: 0;
+        border-top: none !important;
+    }
+    ::-webkit-input-placeholder {
+        color: white;
+        font-size: 1.2rem;
+    }
+    input[type="text"] {
+        color: #FFF;
+        font-size: 1.4rem;
+    }
+    .clear-button {
+        margin: 0;
+        padding: 0;
+        .button-inner {
+            color: #FFF;
+        }
+    }
+    .col-title {
+        color: #FFF;
+        line-height: 25px;
+        font-size: 1.2rem;
+    }
+    .categories .button {
+        width: 96%;
+        margin-left: 2%;
+        background-color: #FFF;
+        color: #000;
+        .button-inner {
+            font-size: 1.2rem;
+        }
+    }
+
+    .categories .button.active {
+        background-color: #272626;
+        .button-inner {
+            color: #FFF;
+        }
+    }
+    .apply-button {
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        width: 96%;
+        background-color: #FFF;
+        .button-inner {
+            color: #000;
+            font-size: 1.4rem;
+        }
+    }
+    ion-header > ion-navbar > ion-buttons[end] > button > span {
+        color: #FFF;
+    }
+}

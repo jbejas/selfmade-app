@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <img src="assets/icons/menu.svg">
+      </button>
+    </ion-buttons>
+    <ion-title>Vote</ion-title>
+    <ion-buttons end>
+      <button ion-button>CART</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-3></ion-col>
+      <ion-col col-6>
+        <button ion-button full small class="filter-bt" (click)="showFilters()">FILTERS +</button>
+      </ion-col>
+      <ion-col col-3></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!--<div class="video-container">
+    <video class="video" id="video" poster="assets/imgs/card.png" webkit-playsinline playsinline>
+      <source src="assets/imgs/movie.mp4"  type="video/mp4">
+    </video>
+  </div>-->
+  <div swing-stack #myswing1 [stackConfig]="stackConfig" (throwoutleft)="sendVote(false)" (throwoutright)="sendVote(true)">
+    <ion-card swing-card #mycards1>
+    
+      <p class="splash-image">
+        <img src="assets/imgs/card.png">
+        <span class="play" *ngIf="play" tappable (click)="playVideo()">PLAY</span>
+        <span class="like" *ngIf="like"><ion-icon ios="ios-heart" md="md-heart"></ion-icon></span>
+        <span class="dislike" *ngIf="dislike"><ion-icon ios="ios-close" md="md-close"></ion-icon></span>
+      </p>
+    
+      <ion-card-content>
+        <h2 text-center>Selfmade</h2>
+        <p text-center>Creating a platform that curates socially responsible startups and providing a diverse array of rewards for followers.</p>  
+      </ion-card-content>
+    
+    </ion-card>
+  </div>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid no-padding>
+      <ion-row>
+        <ion-col text-center tappable (click)="showVotePage()">
+          <p text-center><img src="assets/icons/vote.svg"></p>
+          Vote
+          <span class="active"></span>
+        </ion-col>
+        <ion-col text-center tappable (click)="showRewardsPage()">
+          <p text-center><img src="assets/icons/rewards.svg"></p>
+          Rewards
+        </ion-col>
+        <ion-col text-center tappable (click)="showCampaignsPage()">
+          <p text-center><img src="assets/icons/campaign.svg"></p>
+          Campaigns
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

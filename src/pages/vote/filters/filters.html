@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start></ion-buttons>
+    <ion-title>Filters</ion-title>
+    <ion-buttons end>
+      <button ion-button>CART</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding-horizontal>
+  <p>Filter and sort your results</p>
+  <ion-list>
+
+    <ion-item inset>
+      <ion-input placeholder="Search" type="text" value=""></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col col-8 class="col-title">
+        CATEGORIES
+      </ion-col>
+      <ion-col col-4 text-right>
+        <button class="clear-button" ion-button small clear>Clear All</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid no-padding class="categories">
+    <ion-row>
+      <ion-col col-4>
+        <button ion-button full class="active">Blockchain</button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button full>Space</button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button full>Medic</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-4>
+        <button ion-button full>High Price</button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button full>Tech</button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button full>Finance</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <button ion-button full class="apply-button">Apply</button>
+  </ion-toolbar>
+</ion-footer>

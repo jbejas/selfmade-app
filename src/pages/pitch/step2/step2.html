@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <img src="assets/icons/menu.svg">
+      </button>
+    </ion-buttons>
+    <ion-title>Step 2/2</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <p>Tell us about your <strong>company</strong></p>
+  <h2>PITCH YOUR COMPANY</h2>
+  <p>Record or upload a short video of you pitching your startup! Keep the following rules in mind:</p>
+  <p class="rose">1. A 1 minute pitch is free. Any longer is $1.</p>
+  <p class="rose">2. The max size for and upload is 600MB.</p>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-2 tappable (click)="uploadVideo()">
+        <img src="assets/icons/uploadvideo.svg">
+      </ion-col>
+      <ion-col col-4 tappable (click)="uploadVideo()">
+        Upload Video
+      </ion-col>
+      <ion-col col-2 tappable (click)="recordVideo()">
+        <img src="assets/icons/recordvideo.svg">
+      </ion-col>
+      <ion-col col-4 tappable (click)="recordVideo()">
+        Record Video
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <button ion-button full color="dark">Next</button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <img src="assets/icons/menu.svg">
+      </button>
+    </ion-buttons>
+    <ion-title>Campaigns</ion-title>
+    <ion-buttons end>
+      <button ion-button>ADD</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-grid class="active-campaigns">
+    <ion-row>
+      <ion-col col-5 text-right>
+        NOW ACTIVE
+      </ion-col>
+      <ion-col col-2 text-center>
+        <span class="active-days">7</span>
+      </ion-col>
+      <ion-col col-5 text-left>
+        CAMPAIGNS
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div tappable (click)="viewCampaign()">
+    <div class="campaign-img">
+      <img src="assets/imgs/user1.png">
+      <div class="campaign-like">
+        <ion-icon ios="ios-heart" md="md-heart"></ion-icon>
+      </div>
+    </div>
+    <ion-grid class="user-meta-box">
+      <ion-row>
+        <ion-col>
+          <h1 text-center>Selfmade</h1>
+          <p text-center class="time-remaining"><span class="days">05</span> d : <span class="hours">10</span> h : <span class="minutes">36</span> m : <span class="seconds">05</span> s</p>
+          <h3 text-center>Creating a platform that curates socially responsible startups and providing a diverse array of rewards for followers.</h3>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="percentage-holder">
+            <div class="percentage"></div>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="campaign-meta">
+        <ion-col text-center>
+          71%<br><span>Funded</span>
+        </ion-col>
+        <ion-col text-center>
+          $48,123<br><span>Raised</span>
+        </ion-col>
+        <ion-col text-center>
+          13<br><span>Backers</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid no-padding>
+      <ion-row>
+        <ion-col text-center tappable (click)="showVotePage()">
+          <p text-center><img src="assets/icons/vote.svg"></p>
+          Vote
+        </ion-col>
+        <ion-col text-center tappable (click)="showRewardsPage()">
+          <p text-center><img src="assets/icons/rewards.svg"></p>
+          Rewards
+        </ion-col>
+        <ion-col text-center>
+          <p text-center><img src="assets/icons/campaign.svg"></p>
+          Campaigns
+          <span class="active"></span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

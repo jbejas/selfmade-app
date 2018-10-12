@@ -1,0 +1,133 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>&nbsp;</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="campaign-img">
+    <img src="assets/imgs/user1.png">
+  </div>
+  <ion-grid class="user-meta-box">
+    <ion-row>
+      <ion-col>
+        <h1 text-center>Selfmade</h1>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-2>
+              <img src="assets/imgs/profile-small.png">
+            </ion-col>
+            <ion-col col-10 class="ceo-meta">
+              by Kori Tarkpin-McNeill
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <h3 text-center>The team at Selfmade allown world changing startups and entrepreneurs the opportunity to raise funnds with our apparel and accessories. We use consistent rewards and brand recognition.</h3>
+        <p text-center class="time-remaining"><span class="days">05</span> d : <span class="hours">10</span> h : <span class="minutes">36</span> m : <span class="seconds">05</span> s</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="percentage-holder">
+          <div class="percentage"></div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="campaign-meta">
+      <ion-col text-center>
+        71%<br><span>Funded</span>
+      </ion-col>
+      <ion-col text-center>
+        $48,123<br><span>Raised</span>
+      </ion-col>
+      <ion-col text-center>
+        13<br><span>Backers</span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="content">
+    <h2>About</h2>
+    <p>We are two best friends working on this who first met at age 11 at secondary school and have been good friends ever since. Jonathan has been working on socks for about 5 years now, starting out with a kids character socks brand. He also teaches kids English in Asia and is a bit of a hardcore gamer and some would say the main driving force behind Sock Invaders. Andre lives in London and joined the project in 2017, helping to get Sock Invaders off the ground. He pretty much only plays Fifa and Call of Duty, but we're working on changing that!</p>
+    <h2>TEAM</h2>
+    <p>Select a team member to learn about their context and past experiences.</p>
+    <ion-slides slidesPerView="2" pager>
+      <ion-slide>
+        <img src="assets/imgs/team1.png">
+        <h2>Molly Mandell</h2>
+        <p>CEO &amp; Co-Founder</p>
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/team1.png">
+        <h2>Mark Sanders</h2>
+        <p>CEO &amp; Co-Founder</p>
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/team1.png">
+        <h2>Molly Mandell</h2>
+        <p>CEO &amp; Co-Founder</p>
+      </ion-slide>
+    </ion-slides>
+    <h2>SHARE THIS STARTUP</h2>
+    <p>Love the idea? Make sure to share it with your friends to help the startup reach their goal!</p>
+    <p>&nbsp;</p>
+    <ion-grid no-padding>
+      <ion-row>
+        <ion-col text-center>
+          <img src="assets/icons/facebook1.svg">
+        </ion-col>
+        <ion-col text-center>
+          <img src="assets/icons/instagram.svg">
+        </ion-col>
+        <ion-col text-center>
+          <img src="assets/icons/twitter.svg">
+        </ion-col>
+        <ion-col text-center>
+          <img src="assets/icons/envelope1.svg">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <hr/>
+    <h2>BACK THIS STARTUP</h2>
+    <p>Do you believe in the team and mission of this startup? If so, make sure to back it by assigning it when purchasing a reward!</p>
+    <button ion-button full color="dark">Choose a Reward</button>
+    <h2>REWARDS</h2>
+    <ion-slides slidesPerView="2" pager>
+      <ion-slide>
+        <img src="assets/imgs/reward1.png">
+        <h2>Selfmade Tie</h2>
+        <p>$100</p>
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/reward1.png">
+        <h2>Logo Necklace</h2>
+        <p>$90</p>
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/reward1.png">
+        <h2>Selfmade Tie</h2>
+        <p>$100</p>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid no-padding>
+      <ion-row>
+        <ion-col text-center tappable (click)="showVotePage()">
+          <p text-center><img src="assets/icons/vote.svg"></p>
+          Vote
+        </ion-col>
+        <ion-col text-center tappable (click)="showRewardsPage()">
+          <p text-center><img src="assets/icons/rewards.svg"></p>
+          Rewards
+        </ion-col>
+        <ion-col text-center (click)="showCampaignsPage()">
+          <p text-center><img src="assets/icons/campaign.svg"></p>
+          Campaigns
+          <span class="active"></span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

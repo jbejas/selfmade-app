@@ -1,0 +1,88 @@
+page-profile {
+    .profile-img {
+        width: 100%;
+    }
+    .user-meta-box {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: -16%;
+        background: #FFF;
+        position: relative;
+        z-index: 100;
+        h1 {
+            margin:15px 0 5px 0;
+        }
+        h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.2rem;
+            font-weight: 200;
+        }
+        h5 {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        .username {
+            font-weight:200;
+            font-size: 1.4rem;
+        }
+        .investment {
+            font-weight:200;
+            font-size: 1.4rem;
+            span {
+                font-weight: 400;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .section-meta-box {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: -16%;
+        background: #FFF;
+        position: relative;
+        z-index: 100;
+        h1 {
+            margin:15px 0 5px 0;
+            font-size: 1.6rem;
+        }
+        h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.2rem;
+            font-weight: 200;
+        }
+        .amount {
+            font-size:2rem;
+            margin: 0;
+        }
+        .description {
+            font-size: 1.2rem;
+            font-weight: 200;
+            margin: 0;
+        }
+    }
+    .segment .segment-button {
+        border: none;
+        color: rgba(0,0,0,0.6);
+        border-radius: 0px !important;
+    }
+    .segment .segment-activated {
+        background: transparent !important;
+        color: rgba(0,0,0,0.6) !important;
+        border-bottom: 2px solid $danger;
+    }
+    .following {
+        .following-meta {
+            padding: 0 16px !important;
+            background-color: #FFF;
+            h2 {
+                font-size: 1.6rem;
+                margin: 10px 0;
+            }
+            p {
+                font-size: 1.2rem;
+                font-weight: 200;
+                line-height: 20px;
+            }
+        }
+    }
+}

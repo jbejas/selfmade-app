@@ -1,0 +1,138 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <img src="assets/icons/menu.svg">
+      </button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only><ion-icon ios="ios-log-out" md="md-log-out"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <img class="profile-img" src="assets/imgs/molly1.png">
+  <ion-grid class="user-meta-box">
+    <ion-row>
+      <ion-col>
+        <h1 text-center>Molly Mandell</h1>
+        <h3 text-center>Currently the CEO &amp; Co-Founder</h3>
+        <h5 text-center>New York</h5>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <hr>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-5 text-center class="username">
+        @selfmade
+      </ion-col>
+      <ion-col col-7 text-center class="investment">
+        Investment Success <span>71%</span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div padding-vertical>
+      <ion-segment [(ngModel)]="section">
+        <ion-segment-button value="following">
+          Following
+        </ion-segment-button>
+        <ion-segment-button value="backed">
+          Backed
+        </ion-segment-button>
+        <ion-segment-button value="rewards">
+          Rewards
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+    
+    <div [ngSwitch]="section">
+      <div *ngSwitchCase="'following'">
+        <ion-grid no-padding class="following">
+          <ion-row>
+            <ion-col col-4>
+              <img src="assets/imgs/perfumes.png">
+            </ion-col>
+            <ion-col col-8 class="following-meta">
+              <h2>Selfmade</h2>
+              <p>Creating a platform that curates socially responsible startups and providing a diverse array of rewards for followers.</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>
+              <img src="assets/imgs/hoodie.png">
+            </ion-col>
+            <ion-col col-8 class="following-meta">
+              <h2>101</h2>
+              <p>Creating a platform that curates socially responsible startups and providing a diverse array of rewards for followers.</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>
+              <img src="assets/imgs/glasses.png">
+            </ion-col>
+            <ion-col col-8 class="following-meta">
+              <h2>clap Metrics</h2>
+              <p>Creating a platform that curates socially responsible startups and providing a diverse array of rewards for followers.</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    
+      <div *ngSwitchCase="'backed'">
+        <img class="profile-img" src="assets/imgs/sweater.png">
+        <ion-grid class="section-meta-box">
+          <ion-row>
+            <ion-col>
+              <h1 text-center>Selfmade</h1>
+              <h3 text-center>Creating a platform that curates socially responsible startups and providing a diverse array of rewards for followers.</h3>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4 text-center class="username">
+              <p class="amount">49 069</p>
+              <p class="description">Amount raised</p>
+            </ion-col>
+            <ion-col col-4 text-center class="investment">
+              <p class="amount">35</p>
+              <p class="description"># of Backers</p>
+            </ion-col>
+            <ion-col col-4 text-center class="investment">
+              <p class="amount">2 000</p>
+              <p class="description">XCoin value</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+      <div *ngSwitchCase="'rewards'">
+        <img class="profile-img" src="assets/imgs/sweater.png">
+      </div>
+    </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid no-padding>
+      <ion-row>
+        <ion-col text-center tappable (click)="showVotePage()">
+          <p text-center><img src="assets/icons/vote.svg"></p>
+          Vote
+        </ion-col>
+        <ion-col text-center tappable (click)="showRewardsPage()">
+          <p text-center><img src="assets/icons/rewards.svg"></p>
+          Rewards
+        </ion-col>
+        <ion-col text-center (click)="showCampaignsPage()">
+          <p text-center><img src="assets/icons/campaign.svg"></p>
+          Campaigns
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

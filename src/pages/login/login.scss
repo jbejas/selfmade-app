@@ -1,0 +1,44 @@
+page-login {
+    .scroll-content {
+        background: url('../../assets/imgs/bg.png') center center no-repeat;
+    }
+    .white-box {
+        width: 92%;
+        height: 65%;
+        background: #FFF;
+        position: absolute;
+        left: 4%;
+        bottom: 0;
+        padding: 35px 10px 0 10px;
+        text-align: center;
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-top: 0;
+        }
+        h3 {
+            font-size: 1rem;
+            opacity: .3;
+            padding: 5% 5%;
+        }
+        p {
+            margin: 0;
+            padding-bottom: 50px;
+        }
+    }
+    button > span > img {
+        padding-right: 10px;
+    }
+    .fb-bt {
+        background-color: $facebook;
+    }
+    .mail-bt {
+        background-color: $danger;
+    }
+    p.sign-in {
+        margin: 35px 0 ;
+    }
+    a {
+        text-decoration: none;
+    }
+}

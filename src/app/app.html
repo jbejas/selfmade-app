@@ -1,0 +1,52 @@
+<ion-menu [content]="content">
+
+  <ion-content>
+    <ion-item class="profile-meta" tappable menuToggle (click)="viewProfile()">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/molly.png">
+      </ion-thumbnail>
+      <h2 class="user-name">MOLLY MANDEL</h2>
+      <button ion-button clear item-end><ion-icon ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon></button>
+    </ion-item>
+    <div class="portfolio-value">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-3 text-center>
+            <img src="assets/imgs/logo-user.png">
+          </ion-col>
+          <ion-col col-9 class="value">
+            1 340 260<br>
+            <span>PORTFOLIO VALUE</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-3 text-center>
+            <img src="assets/imgs/logo-user.png">
+          </ion-col>
+          <ion-col col-9 class="value">
+            1 340 260<br>
+            <span>BUYING POWER</span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <hr>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="spacer-menu">&nbsp;</ion-col>
+      </ion-row>
+      <ion-row class="menu-item" *ngFor="let p of pages" menuToggle tappable (click)="openPage(p)">
+        <ion-col col-3 text-center>
+          <img [src]="p.image" class="menu-icon">
+        </ion-col>
+        <ion-col col-9>
+          {{p.title}}
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

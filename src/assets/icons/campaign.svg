@@ -1,0 +1,17 @@
+<svg width="19px" height="20px" viewBox="0 0 19 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bar/campaigns-active" transform="translate(-303.000000, -9.000000)">
+            <g id="Group-14">
+                <g id="icons/campaigns-black" transform="translate(301.000000, 6.000000)">
+                    <rect id="Rectangle-3" x="0" y="0" width="24" height="24"></rect>
+                    <circle id="Oval-2" stroke="#000000" stroke-width="1" cx="8.5" cy="16.5" r="2.5"></circle>
+                    <path d="M3,7.68489901 L3,14.3149019 C3,14.7892445 3.33324167,15.1983238 3.79778489,15.294243 L16.7977849,17.978493 C17.3386601,18.0901733 17.8676608,17.7422422 17.9793411,17.201367 C17.993078,17.1348386 18,17.0670836 18,16.9991519 L18,5.00064904 C18,4.44836429 17.5522847,4.00064904 17,4.00064904 C16.9320682,4.00064904 16.8643133,4.00757108 16.7977849,4.02130791 L3.79778489,6.70555788 C3.33324167,6.80147712 3,7.2105564 3,7.68489901 Z" id="Path-3" stroke="#000000" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd"></path>
+                    <rect id="Rectangle" stroke="#000000" stroke-width="1" x="20.5" y="7.5" width="1" height="7" rx="0.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,80 @@
+page-vote {
+    
+    .card {
+        box-shadow: none;
+        margin-top: 0;
+    }
+    .filter-bt {
+        background-color: $white;
+        color: #000;
+        box-shadow: none !important;
+    }
+    ion-card-content {
+        h2 {
+            font-size: 3rem !important;
+        }
+        p {
+            font-size: 1.2rem !important;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+    .splash-image {
+        position: relative;
+        .play {
+            position:absolute;
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            color: #FF0000;
+            border: 2px solid #FF0000;
+            border-radius: 50%;
+            text-align: center;
+            top: calc(50% - 45px);
+            left: calc(50% - 45px);
+            font-weight: bold;
+        }
+        .like {
+            position:absolute;
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            color: #FF0000;
+            border: 2px solid #FF0000;
+            border-radius: 50%;
+            text-align: center;
+            top: calc(50% - 45px);
+            left: calc(50% - 45px);
+            font-weight: bold;
+            font-size: 4rem;
+            opacity: 0;
+        }
+        .dislike {
+            position:absolute;
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            color: #FF0000;
+            border: 2px solid #FF0000;
+            border-radius: 50%;
+            text-align: center;
+            top: calc(50% - 45px);
+            left: calc(50% - 45px);
+            font-weight: bold;
+            font-size: 4rem;
+            opacity: 0;
+        }
+    }
+    .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        video {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+}

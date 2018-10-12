@@ -1,0 +1,28 @@
+page-step2 {
+    .rose {
+        color: $rose;
+        margin: 0 !important;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    p {
+        line-height: 20px;
+        font-size: 1.2rem;
+    }
+    ion-toolbar {
+        padding-right: 8px !important;
+        padding-left: 8px !important;
+    }
+    ion-footer .toolbar-background {
+        border: none !important;
+    }
+    ion-grid {
+        margin-top: 15px;
+    }
+    [col-4] {
+        font-size: 1.2rem;
+        color: $red;
+        line-height: 40px;
+    }
+}

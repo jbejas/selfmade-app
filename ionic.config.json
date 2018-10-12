@@ -1,0 +1,14 @@
+{
+  "name": "selfmade",
+  "app_id": "8deddb01",
+  "type": "ionic-angular",
+  "integrations": {
+      "cordova": {}
+  },
+  "proxies": [
+      {
+          "path": "/api",
+          "proxyUrl": "http://34.214.109.70/api"
+      }
+  ]
+}

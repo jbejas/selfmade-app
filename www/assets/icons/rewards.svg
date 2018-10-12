@@ -1,0 +1,20 @@
+<svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.815123601">
+        <g id="bar/rewards-active" transform="translate(-179.000000, -6.000000)">
+            <g id="Group-2">
+                <g id="icons/rewards-black" transform="translate(176.000000, 6.000000)">
+                    <g id="Group-3">
+                        <rect id="Rectangle-3" x="0" y="1" width="24" height="24"></rect>
+                        <rect id="Rectangle-19" stroke="#000000" x="4.5" y="8.5" width="15" height="11" rx="1"></rect>
+                        <rect id="Rectangle-19" stroke="#000000" x="3.5" y="5.5" width="17" height="3" rx="1"></rect>
+                        <path d="M14,1 C15.1028571,1 16,1.89714286 16,3 C16,4.10285714 15.1028571,5 14,5 L12,5 L12,3 C12,1.89714286 12.8971429,1 14,1 Z" id="Path" stroke="#000000"></path>
+                        <path d="M10,1 C11.1028571,1 12,1.89714286 12,3 C12,4.10285714 11.1028571,5 10,5 L8,5 L8,3 C8,1.89714286 8.89714286,1 10,1 Z" id="Path" stroke="#000000" transform="translate(10.000000, 3.000000) scale(-1, 1) translate(-10.000000, -3.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
